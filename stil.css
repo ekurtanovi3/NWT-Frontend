@@ -1,0 +1,143 @@
+@import url(http://fonts.googleapis.com/css?family=Peralta);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=VT323);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+background : black;
+color : #111111;
+font-family : sans-serif;
+}
+#okvir {
+width : 100%;
+background : #FFFFFF;
+}
+
+#zaglavlje {
+background : #FFFFFF;
+height : 80px;
+}
+
+h1 {
+text-indent : 110px;
+font-family : Lobster;
+padding-top : 18px;
+}
+
+#meni {
+padding : 5px 10px;
+background : #e6b800;
+}
+
+#meni ul {
+margin : 0;
+padding : 0;
+}
+
+#meni li {
+display : inline;
+}
+
+#meni li a {
+text-decoration: none;
+color: black;
+}
+
+#meni li a.current{
+   color: black;
+   
+   font-weight: bolder;
+}
+
+#meni li a:hover {
+	text-decoration: underline;
+color: black;
+}
+
+.okvir2{
+   background: #111111;
+   width: 95%;
+   border-radius:25px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 15px;
+   color:#FFFFCC;
+   padding: 5px;
+}
+
+.naslov {
+   font-size: large;
+   padding: 10px;
+}
+
+.vijest{
+
+	overflow : auto;
+   background: #FFFFCC;
+   border-bottom-right-radius:21px;
+   border-bottom-left-radius:21px;
+   color: #191919;
+   padding: 5px;
+}
+
+.vijest p{ 
+float : right;
+}
+
+
+
+
+#lijevi {
+float : left;
+width : 50%;
+padding : 0;
+background : #FFFFFF;
+padding-bottom: 20px;
+}
+
+.slika1{
+float: left;
+}
+
+.star{
+	position:relative;
+	float:right;
+	right: 20px;
+	bottom: 15px;
+
+}
+.iza{
+	position:relative;
+	left:562px;
+}
+
+#desni {
+	clear:right;
+float : right;
+width : 50%;
+padding : 0;
+background : #FFFFFF;
+padding-bottom: 20px;
+height: 100%;
+}
+
+.sl {
+position : absolute;
+top : 35px;
+left : 17px;
+}
+
+#podnozje {
+clear : both;
+padding : 5px 10px;
+text-align : center;
+background : #e6b800;
+color: black;
+}
+
+#podnozje p {
+margin : 0;
+}

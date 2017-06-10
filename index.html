@@ -4,14 +4,23 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<TITLE>Filmovi</TITLE>
 		<link rel="stylesheet" type="text/css" href="stil.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<script src="main.js"></script>
 	</HEAD>
 	<BODY>
 		<div id="zaglavlje">
 			<img class="sl" src="slike/logo.jpg" alt="logo">
-			<h1>Internet baza filmova</h1>
 			<div class="search">
-				<form
+				<form class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+    </div>
+    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+</form>
 		</div>
+			<h1>Internet baza filmova</h1>
+			
 
 		<div id="meni">
 			<ul>
@@ -19,48 +28,15 @@
 				<li><a href="glumci.html">Glumci</a></li>
 			</ul>
 		</div>
+		<button id="loadMovies" value="submit" >Load movies</button>
+<div id="filmoviLoad">
 
-		<div id="lijevi">
+</div>
+		
 
-
-			<div class="okvir2"> 
-				<div class="naslov">The Shawshank Redemption (1994)<img class="star" src="slike/star.png" alt=" "> <div class="iza">9.3</div></div>
-
-
-				<div class="vijest"><img class="slika1" src="slike/shawshank.jpg" alt=" ">Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the man's unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red.	</div>
-			</div>
-			
-			<div class="okvir2"> 
-				<div class="naslov">The Godfather: Part II (1974)<img class="star" src="slike/star.png" alt=" "> <div class="iza">9.0</div></div>
-
-
-				<div class="vijest"><img class="slika1" src="slike/godfather2.jpg" alt=" ">The continuing saga of the Corleone crime family tells the story of a young Vito Corleone growing up in Sicily and in 1910s New York; and follows Michael Corleone in the 1950s as he attempts to expand the family business into Las Vegas, Hollywood and Cuba.	</div>
-			</div>
-			
-		</div>
-
-		<div id="desni">
-			<div class="okvir2"> 
-				<div class="naslov">The Godfather (1972)<img class="star" src="slike/star.png" alt=" "> <div class="iza">9.2</div></div>
-
-
-				<div class="vijest"><img class="slika1" src="slike/godfather.jpg" alt=" "> When the aging head of a famous crime family decides to transfer his position to one of his subalterns, a series of unfortunate events start happening to the family, and a war begins between all the well-known families leading to insolence, deportation, murder and revenge, and ends with the favorable successor being finally chosen.</div>
-			</div>
-			
-			<div class="okvir2"> 
-				<div class="naslov">The Dark Knight (2008)<img class="star" src="slike/star.png" alt=" "> <div class="iza">9.0</div></div>
-
-
-				<div class="vijest"><img class="slika1" src="slike/dark.jpg" alt=" ">Set within a year after the events of Batman Begins, Batman, Lieutenant James Gordon, and new district attorney Harvey Dent successfully begin to round up the criminals that plague Gotham City until a mysterious and sadistic criminal mastermind known only as the Joker appears in Gotham, creating a new wave of chaos. Batman's struggle against the Joker becomes deeply personal, forcing him to "confront everything he believes" and improve his technology to stop him.	</div>
-			</div>
-			
-			
-		</div>
-
-
-		</div>
 		<div id="podnozje">
 			<p>Copyright (c) 2017. IMDb</p>
 		</div>
+
 	</BODY>
 </HTML>

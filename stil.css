@@ -130,6 +130,14 @@ top : 35px;
 left : 17px;
 }
 
+.search {
+float : right;
+top : 35px;
+background : #e6b800;
+color: #e6b800;
+
+}
+
 #podnozje {
 clear : both;
 padding : 5px 10px;

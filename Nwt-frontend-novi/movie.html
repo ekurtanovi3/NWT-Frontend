@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Movies</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/movie.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
+        rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+    <div class="brand">Moviepedia</div>
+    <div class="address-bar">All movies on one place </div>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Moviepedia</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="movie.html?id=ferret">Movies</a>
+                    </li>
+                    <li>
+                        <a href="actors.html">Actors</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li id="loginToggle">
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 id="movieTitle" class="intro-text text-center">Movie title</h2>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <img id="movieImg" class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                </div>
+                <div id="movieDescription" class="col-md-6 pull-right">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div id="movieMainActors" class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Main Actors</strong>
+                        <!--<button type="button" class="toogleCastBtn btn btn-info" data-toggle="collapse" data-target="#fullCastContainer">Show Full Cast</button>-->
+                    </h2>
+                    <hr>
+                </div>
+            </div>
+            <div id="fullCastContainer" class="container collapse">
+                <div class="row">
+                    <div class="box">
+                        <div class="col-md-12">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Actors</h3>
+                                    <div class="pull-right">
+                                        <span class="clickable filter" data-toggle="tooltip" title="Toggle table filter" data-container="body">
+								<i class="glyphicon glyphicon-filter"></i>
+							</span>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <input type="text" class="form-control" id="dev-table-filter" data-action="filter" data-filters="#dev-table" placeholder="Filter Actors"
+                                    />
+                                </div>
+                                <table class="table table-hover table-condensed" id="dev-table">
+                                    <thead>
+                                        <tr>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Role in movie</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="fullCastTable">
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <button type="button" class="toogleCastBtn btn btn-info" data-toggle="collapse" data-target="#commentsCollapse">Show comments</button>
+                <div id="commentsCollapse" class="collapse col-md-12">
+                    <div class="col-md-8">
+                        <div class="page-header">
+                        </div>
+                            <form class="form-inline" role="form">
+                                <div class="form-group">
+                                    <input id="commentInput" class="form-control" type="text" placeholder="Your comments" />
+                                </div>
+                                <div class="form-group">
+                                    <button id="addCommentBtn" class="btn btn-default">Add</button>
+                                </div>
+                            </form>
+                            <br>
+                        <div class="comments-list">
+                            <div id="commentSectionMedia" class="media">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Moviepedia project-Tim13</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/singleMovie.js"></script>
+    <script src="js/tableMovie.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

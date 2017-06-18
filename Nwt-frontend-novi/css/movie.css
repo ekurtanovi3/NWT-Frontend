@@ -1,0 +1,27 @@
+.clickable{
+		    cursor: pointer;   
+		}
+
+		.panel-heading div {
+
+			margin-top: -18px;
+			font-size: 15px;
+		}
+		.panel-heading div span{
+			margin-left:5px;
+		}
+		.panel-body{
+			display: none;
+		}
+	.toogleCastBtn{
+		float: right;
+	}
+	.panel-primary{
+		border: none;
+	}
+.panel-primary>.panel-heading{
+		background-color: #84b2e0;
+}
+.panel {
+	background-color: transparent;
+}
